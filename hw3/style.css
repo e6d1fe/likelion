@@ -5,10 +5,17 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-/* nav */
-nav {
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* nav1 */
+.nav1 {
   height: 40px;
   background-color: #003875;
   color: white;
@@ -18,7 +25,7 @@ nav {
   justify-content: center;
 }
 
-nav .container {
+.nav1 .container {
   width: 1100px;
   display: flex;
   justify-content: flex-end;
@@ -48,7 +55,7 @@ nav .container {
 .lang-setting select {
   background-color: #001a38;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   height: 26px;
   border: none;
@@ -56,4 +63,310 @@ nav .container {
   border-radius: 2px;
 }
 
+/* nav2 */
+.nav2 {
+  height: 90px;
+  background-color: #001a38;
+  color: white;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav2 .container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  margin-left: 45px;
+}
+
+.logoimg img {
+  width: 150px;
+  height: auto;
+}
+
+.fa-search {
+  margin-left: 45px;
+}
+
+/* nav3 */
+.nav3 {
+  height: 50px;
+  background-color: #4095cb;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav3 .container {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav3 .article {
+  text-decoration: underline;
+}
+
 /* header */
+.hd .container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hd img {
+  width: 100%;
+  height: auto;
+  /* object-fit: contain; */
+}
+
+.hd .pagebutton1,
+.pagebutton2 {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hd .pagebutton1 {
+  position: absolute;
+  top: 215px;
+  left: 95px;
+}
+
+.hd .pagebutton2 {
+  position: absolute;
+  top: 215px;
+  right: 95px;
+}
+
+/* section */
+.sec {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.sec .container {
+  width: 1100px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.searchbar {
+  background-color: #f2ca49;
+  border-radius: 5px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  padding: 35px;
+  margin-bottom: 60px;
+}
+
+.search1 {
+  background-color: #3e3e40;
+  width: 120px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.search2 {
+  background-color: transparent;
+  border: 1px solid #3e3e40;
+  width: 120px;
+  height: 53px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.searchbar input {
+  height: 53px;
+  border: none;
+  border-radius: 5px;
+  width: 780px;
+}
+
+.searchbar input::placeholder {
+  color: #cecece;
+  font-size: 15px;
+  padding-left: 30px;
+}
+
+.courses-container span {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.course {
+  width: 260px;
+  height: 375px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.course:first-child .course-image {
+  height: 160px;
+  background-image: url("./img/lu-atc1.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.course:nth-child(2) .course-image {
+  height: 160px;
+  background-image: url("./img/lu-atc2.png");
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.course:nth-child(3) .course-image {
+  height: 160px;
+  background-image: url("./img/lu-atc3.png");
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.course:last-child .course-image {
+  height: 160px;
+  background-image: url("./img/lu-atc4.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.description {
+  position: relative;
+}
+
+.category {
+  color: #ababab;
+  padding: 20px 15px 0px 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.course-name {
+  padding: 0px 15px;
+  font-weight: 500;
+}
+
+.application-box {
+  background-color: #f7f8fa;
+  border-top: 1px solid #e6e6e6;
+  margin: 0;
+  position: absolute;
+  top: 145px;
+  height: 68px;
+  width: 258px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.application {
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.period {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 15px;
+  color: #b0b1b1;
+}
+
+.fa-chevron-left {
+  color: white;
+}
+
+.fa-chevron-right {
+  color: white;
+}
+
+/* footer */
+.ft {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.ft .container {
+  width: 1100px;
+  padding: 50px 0px;
+}
+
+.ft .legal-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ft .legal {
+  font-weight: 400;
+}
+
+.ft .policy {
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.ft p {
+  color: #808080;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 8px;
+}
+
+.ft .info {
+  margin-bottom: 40px;
+}
+
+.ft .copyright {
+  font-weight: 100;
+  font-size: 14px;
+}

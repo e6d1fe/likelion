@@ -3,6 +3,7 @@ const hi = document.getElementById("hi");
 
 function changeColor(event) {
   const target = event.target.value;
+  console.log(event);
 
   if (target === "red") {
     hi.style.color = "red";
